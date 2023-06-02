@@ -1339,17 +1339,26 @@ def atur_dulu():
 		baz.append('metod3')
 	else:
 		baz.append('metod1')
-		
-	pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
+	print('')
+	pwplus=input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mTambahkan Password Manual ? \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mt \33[m) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
-		pwku=input('>> Masukkan Password Tambahan : ')
+		pwku=input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMasukkan Password Tambahan : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
 	else:
 		pwpluss.append('no')
+	
+	print(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mApakah Anda Ingin Mengunakan User-Agent Manual ? \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mT \33[m)')
+	uatambah = input(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
+	if uatambah in ['y','Ya','ya','Y']:
+		ualuh.append('ya')
+		bzer = input(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMasukan User-Agent > \x1b[1;93m')
+		ualu.append(bzer)
+	else:
+		ualuh.append('tidak')
 	passwrd()
 ###----------[ BAGIAN PASSWRD ]----------###
 def passwrd():
