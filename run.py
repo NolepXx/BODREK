@@ -1226,17 +1226,6 @@ def atur_dulu():
 		ualu.append(bzer)
 	else:
 		ualuh.append('tidak')
-		
-		pwplus=input('>> Tambahkan Password Manual y atau t ')
-	if pwplus in ['y','Ya','ya','Y']:
-		pwpluss.append('ya')
-		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
-		pwku=input('>> Masukkan Password Tambahan : ')
-		pwkuh=pwku.split(',')
-		for xpwn in pwkuh:
-			pwnya.append(xpwn)
-	else:
-		pwpluss.append('tidak')
 	passwrd()
 
 ###----------[ BAGIAN PASSWRD ]----------###
