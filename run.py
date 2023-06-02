@@ -97,7 +97,7 @@ try:
 	open('socksku.txt','w').write(proxylist)
 except Exception as e:
 	baz_anim(f'gagal ster :(')
-proxsi=open('socksku.txt','r').read().splitlines()
+prox=open('socksku.txt','r').read().splitlines()
 limitd=0
 for agenkuw in range(10000):
 	a='Mozilla/5.0 (Linux; Android'
