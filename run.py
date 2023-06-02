@@ -999,7 +999,7 @@ def menu(id):
 	waktu(1)
 	banner()
 	print(f'{xxx}─────────────────────────────')
-	print(f'{xxx}└── jika ingin crack pilih metode publik,file,massal/dump dan ketik result jika ingin keluar toll ketik ,00,0')
+	print(f'{xxx}└──crack pilih metode publik,file,dump dan ketik result jika ingin keluar toll ketik ,00,0')
 	helpbas = input(f'{xxx}└── : ')
 	if helpbas in ['publik','Publik','Enter']:
 		nge_krek()
@@ -1339,26 +1339,6 @@ def atur_dulu():
 		baz.append('metod3')
 	else:
 		baz.append('metod1')
-	print('')
-	pwpluss =input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mTambahkan Password Manual ? \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mt \33[m) ')
-	if pwpluss in ['y','Y']:
-		pwpluss.append('ya')
-		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
-		pwku=input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMasukkan Password Tambahan : ')
-		pwnya=pwku.split(',')
-		for xpwd in pwnya:
-			pwnya.append(xpwd)
-	else:
-		pwpluss.append('no')
-	
-	print(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mApakah Anda Ingin Mengunakan User-Agent Manual ? \33[m( \x1b[1;92mY\x1b[1;91m/\x1b[1;93mT \33[m)')
-	uatambah = input(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPilih > \x1b[1;93m')
-	if uatambah in ['y','Ya','ya','Y']:
-		ualuh.append('ya')
-		bzer = input(f'\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMasukan User-Agent > \x1b[1;93m')
-		ualu.append(bzer)
-	else:
-		ualuh.append('tidak')
 	passwrd()
 ###----------[ BAGIAN PASSWRD ]----------###
 def passwrd():
