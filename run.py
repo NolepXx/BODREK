@@ -1234,7 +1234,7 @@ def atur_dulu():
 		pwku=input('>> Masukkan Password Tambahan : ')
 		pwkuh=pwku.split(',')
 		for xpwn in pwkuh:
-			pwv.append(xpwn)
+			pwnya.append(xpwn)
 	else:
 		pwpluss.append('no')
 	passwrd()
