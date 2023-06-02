@@ -1,7 +1,28 @@
 ###----------[ IMPORT MODULE ]----------###
-import requests,json,os,sys,random,datetime,time,re,platform
-from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn,TimeElapsedColumn
+import requests,bs4,json,os,sys,random,datetime,time,re,urllib3,rich,base64
+from time import sleep
+from rich import pretty
+from rich.tree import Tree
+from rich.panel import Panel
+from rich import print as cetak
+from rich import print as rprint
+from rich import print as prints
+from rich.progress import track
+from rich.text import Text as tekz
+from rich.console import Console
+from rich.columns import Columns
+from rich.panel import Panel as nel
+from rich.panel import Panel as panel
+from bs4 import BeautifulSoup as sop
+from bs4 import BeautifulSoup as par
+from rich.console import Group as gp
+from bs4 import BeautifulSoup as parser
+from rich.columns import Columns as col
+from rich.console import Console as sol
+from rich.markdown import Markdown as mark
 from concurrent.futures import ThreadPoolExecutor as tred
+from concurrent.futures import ThreadPoolExecutor as BrayennnXD 
+from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn
 from time import sleep as waktu
 from rich.panel import Panel
 sys.stdout.write('\x1b]2; NOLEPXXXX \x07')
