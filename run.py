@@ -1229,14 +1229,14 @@ def atur_dulu():
 		
 		pwplus=input('>> Tambahkan Password Manual ( Ya/t ) ')
 	if pwplus in ['y','Ya','ya','Y']:
-		pwplus.append('ya')
+		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
 		pwku=input('>> Masukkan Password Tambahan : ')
 		pwkuh=pwku.split(',')
-		for xpw in pwkuh:
-			pwnya.append(xpw)
+		for xpwn in pwkuh:
+			pwv.append(xpwn)
 	else:
-		pwplus.append('no')
+		pwpluss.append('no')
 	passwrd()
 
 ###----------[ BAGIAN PASSWRD ]----------###
