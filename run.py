@@ -88,6 +88,9 @@ usrgent2 = []
 loop,baz = 0,[]
 ok,cp,oo = 0,0,[]
 ualu,ualuh = [],[]
+id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
+cokbrut=[]
+pwpluss,pwnya=[],[]
 ###----------[ GET PROXY ]----------###
 try:
 	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
