@@ -1278,10 +1278,11 @@ def cektahun(fx):
 	return tahunz
 def metodh1(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=(f"\r🔥 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
-	prog.advance(des)
+	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
+	prog.update(des,description=f"[bold green]Async[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.advance(des) 
 	for pw in pwv:
 		try:
 			nip=random.choice(proxsi)
@@ -1467,10 +1468,11 @@ def cektahun(fx):
 ###----------[ REGULAR ]----------###
 def metod1(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=(f"\r🔥 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
-	prog.advance(des)
+	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
+	prog.update(des,description=f"[bold green]Async[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.advance(des) 
 	for pw in pwv:
 		try:
 			if 'ya' in ualuh: ua = ualu[0]
@@ -1523,10 +1525,11 @@ def metod1(idf,pwv):
 ###----------[ ASYNC ]----------###
 def metod2(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=(f"\r🔥 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
-	prog.advance(des)
+	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
+	prog.update(des,description=f"[bold green]REG2[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.advance(des) 
 	for pw in pwv:
 		try:
 			if 'ya' in ualuh: ua = ualu[0]
@@ -1581,11 +1584,11 @@ def metod2(idf,pwv):
 ###----------[ VALIDATE ]----------###
 def metod3(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=(f"\r🔥 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
-	prog.advance(des)
+	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
-	ua = random.choice(['Mozilla/5.0 (Linux; Android 10; moto g(8) plus Build/QPIS30.28-Q3-28-26-4-1-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.56 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/409.0.0.27.106;'])
 	ses = requests.Session()
+	prog.update(des,description=f"[bold green]REG3[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.advance(des) 
 	for pw in pwv:
 		try:
 			if 'ya' in ualuh: ua = ualu[0]
