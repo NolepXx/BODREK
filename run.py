@@ -949,12 +949,14 @@ def menu(id):
 	waktu(1)
 	banner()
 	print(f'{xxx}─────────────────────────────')
-	print(f'{xxx}└── cari publik atau file')
+	print(f'{xxx}└── cari publik atau file dan ketik results')
 	helpbas = input(f'{xxx}└── : ')
 	if helpbas in ['publik','Publik','Enter']:
 		nge_krek()
 	elif helpbas in ['file','File','files']:
 		file_dump()
+	elif helpbas in ['result','Result','result']:
+		results()
 	elif helpbas in ['hapus','0','00']:
 		os.system('rm -rf .token.txt')
 		os.system('rm -rf .cok.txt')
@@ -1439,7 +1441,101 @@ def metod3(idf,pwv):
 			waktu(31)
 	loop+=1
 	
-
+def result():
+	cetak(panel(f'[bold white][[bold cyan]01[/][bold white]][/] [bold white]Hasil OK[/]\n[bold white][[bold cyan]02[/][bold white]][/] [bold white]Hasil CP[/]\n[bold white][[bold cyan]03[/][bold white]][/] [bold red]Kembali[/]',width=90,title=f"[bold white]• [/][bold green]List Menu Cek[/][bold white] •[/]",style=f"bold white"))
+	kz = input(f' {biru}━─═ ◕➤ Pilih : ')
+	if kz in ['2','02']:
+		try:vin = os.listdir('/sdcard/CP')
+		except FileNotFoundError:
+			print(' {biru}━─═ ◕➤ File Tidak Di Temukan ')
+			time.sleep(3)
+			back()
+		if len(vin)==0:
+			print(' {biru}━─═ ◕➤ Anda Tidak Memiliki Hasil CP ')
+			time.sleep(4)
+			back()
+		else:
+			cih = 0
+			lol = {}
+			for isi in vin:
+				try:hem = open('CP/'+isi,'r').readlines()
+				except:continue
+				cih+=1
+				if cih<10:
+					nom = '0'+str(cih)
+					lol.update({str(cih):str(isi)})
+					lol.update({nom:str(isi)})
+					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
+				else:
+					lol.update({str(cih):str(isi)})
+					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
+			geeh = input(f'\n{P}{x}{H} ━─═ ◕➤ {x}{P}{x} {P}Select{x} : ')
+			try:geh = lol[geeh]
+			except KeyError:
+				print(' ━─═ ◕➤ Pilih Yang Bener Kontol ')
+				exit()
+			try:lin = open('CP/'+geh,'r').read().splitlines()
+			except:
+				print(' ━─═ ◕➤ File Tidak Di Temukan ')
+				time.sleep(4)
+				back()
+			nocp=0
+			for cpku in range(len(lin)):
+				cpkuni=lin[nocp].split('|')
+				cpkuh=f'# ID : {cpkuni[0]} PASSWORD : {cpkuni[1]}'
+				sol().print(mark(cpkuh,style="yellow"))
+				nocp +=1
+			input('[ Klik Enter ]')
+			back()
+	elif kz in ['1','01']:
+		try:vin = os.listdir('/sdcard/OK')
+		except FileNotFoundError:
+			print(' ━─═ ◕➤ File Tidak Di Temukan ')
+			time.sleep(4)
+			back()
+		if len(vin)==0:
+			print(' ━─═ ◕➤ Anda Tidak Mempunyai File OK ')
+			time.sleep(4)
+			back()
+		else:
+			cih = 0
+			lol = {}
+			for isi in vin:
+				try:hem = open('OK/'+isi,'r').readlines()
+				except:continue
+				cih+=1
+				if cih<80:
+					nom = '0'+str(cih)
+					lol.update({str(cih):str(isi)})
+					lol.update({nom:str(isi)})
+					print('['+nom+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
+				else:
+					lol.update({str(cih):str(isi)})
+					print('['+str(cih)+'] '+isi+' [ '+str(len(hem))+' Account ]'+x)
+			geeh = input('\n {biru}━─═ ◕➤ Pilih : ')
+			try:geh = lol[geeh]
+			except KeyError:
+				print(' ━─═ ◕➤ Pilih Yang Bener Kontol ')
+				exit()
+			try:lin = open('OK/'+geh,'r').read().splitlines()
+			except:
+				print(' ━─═ ◕➤ File Tidak Di Temukan ')
+				time.sleep(4)
+				back()
+			nocp=0
+			for cpku in range(len(lin)):
+				cpkuni=lin[nocp].split('|')
+				cpkuh=f'# ID : {cpkuni[0]} PASSWORD : {cpkuni[1]}'
+				sol().print(mark(cpkuh,style="green"))
+				print(f'{hh}USER-AGENT : {x}{cpkuni[2]}')
+				nocp +=1
+			input('[ Klik Enter ]')
+			back()
+	elif kz in ['3','03']:
+		back()
+	else:
+		print(' {biru}━─═ ◕➤ Pilih Yang Bener Kontol ')
+		exit()
 # Cek Opsi Cp Otomatis #
 def ceker(idf,pw):
 	global cp
