@@ -1165,6 +1165,16 @@ def atur_duluh():
 		xbz.append('metodh1')
 	else:
 		xbz.append('metodh1')
+	print(f'{xxx}─────────────────────────────')
+	print('└── tambahkan ua y atau t')
+	uatambah = input(f'└── : ')
+	if uatambah in ['y','Ya','ya','Y']:
+		ualuh.append('ya')
+		print(f'{xxx}─────────────────────────────')
+		bzer = input(f'└── ua : ')
+		ualu.append(bzer)
+	else:
+		ualuh.append('tidak')
 	passwrdh()
 
 def passwrdh():
