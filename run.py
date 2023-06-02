@@ -1203,9 +1203,9 @@ def atur_dulu():
 		exit()
 		
 	print(f'{xxx}─────────────────────────────')
-	print('└── 1. regular')
-	print('└── 2. memek')
-	print('└── 3. validate')
+	print('└── 1. KOPI')
+	print('└── 2. JAHE')
+	print('└── 3. SUSU')
 	metod = input(f'{xxx}└── : ')
 	if metod in ['1','01']:
 		baz.append('metod1')
@@ -1227,16 +1227,16 @@ def atur_dulu():
 	else:
 		ualuh.append('tidak')
 		
-		pwplus=input('>> Tambahkan Password Manual ( Ya/t ) ')
+		pwplus=input('>> Tambahkan Password Manual y atau t ')
 	if pwplus in ['y','Ya','ya','Y']:
-		pwpluss.append('ya')
+		pwplus.append('ya')
 		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
 		pwku=input('>> Masukkan Password Tambahan : ')
 		pwkuh=pwku.split(',')
 		for xpwn in pwkuh:
 			pwnya.append(xpwn)
 	else:
-		pwpluss.append('no')
+		pwpluss.append('tidak')
 	passwrd()
 
 ###----------[ BAGIAN PASSWRD ]----------###
