@@ -4,7 +4,7 @@ from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn,TimeElapse
 from concurrent.futures import ThreadPoolExecutor as tred
 from time import sleep as waktu
 from rich.panel import Panel
-sys.stdout.write('\x2b]3; NOLEPXXXX \x07')
+sys.stdout.write('\x1b]2; NOLEPXXXX \x07')
 ###----------[ GLOBAL NAMA ]----------###
 id,id2,uid = [],[],[]
 xbz,xnxx = [],[]
