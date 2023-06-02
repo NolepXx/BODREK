@@ -864,8 +864,7 @@ def banner():
 |  |  |  |     \   \    |  |      /  /_\  \   |  |  |  |  |  |  | |  . `  |    |  |     |   ___/  |   __|  |   __   | 
 |  `--'  | .----)   |   |  `----./  _____  \  |  '--'  |  `--'  | |  |\   |    |  `----.|  |      |  |____ |  |  |  | 
  \______/  |_______/     \______/__/     \__\ |_______/ \______/  |__| \__|     \______|| _|      |_______||__|  |__| 
- {m}▪︎{k}▪︎{h}▪︎{sir} AMOCYLINE PARAHMEX OSAGI {x}{m}▪︎{k}▪︎{h}▪︎{x}
-''')
+ {m}▪︎{k}▪︎{h}▪︎{sir} AMOCYLINE PARAHMEX OSAGI {x}{m}▪︎{k}▪︎{h}▪︎{x}''')
 ###----------[ CEK COKIS TOKEN ]----------###
 def login_baz():
 	try:
@@ -1005,19 +1004,18 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		cetak(panel('\t            [bold white]Ketik [bold green]Me[/] Jika Ingin Crack Pertemanan Sendiri',width=90,title=f"[bold green]Crack Massal",style=f"bold white"))
-		jum = int(input(f' [+] {P}Mau Berapa Idz Target {x} : '))
+		jum = int(input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMau Berapa Target Kak ? > \x1b[1;93m'))
 	except ValueError:
-		print(' [+] Wrong input ')
+		print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMasukkan Angka , Bukan Huruf !')
 		exit()
-	if jum<1 or jum>80:
-		print(f'{h} [+] {x}Pertemanan Tidak Publik  ')
+	if jum<1 or jum>100:
+		print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mGagal Dump ID ')
 		exit()
 	ses=requests.Session()
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input(f' [+] {P}Masukan Idz Target Yang Ke '+str(yz)+' : ')
+		kl = input('\x1b[1;93m[\x1b[1;92m?\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mMasukkan Idz Yang Ke '+str(yz)+' > \x1b[1;93m')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -1031,17 +1029,18 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			print(' [+] Unstable Signal ')
+			print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mSinyal Anda Kurang Bagus Nih !')
 			exit()
 	try:
-		print(f' [+] {P}Total Idz Target Yang Terkumpul{x} : {h}'+str(len(id)))
+		print('')
+		print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mTotal ID Yang Terkumpul = {asu}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
-		print(' [+] Unstable Signal ')
+		print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mSinyal Anda Kurang Bagus Nih !')
 		back()
 	except (KeyError,IOError):
-		print(f' [+] {k} Friendship Not Public {x}')
+		print(f'\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mPertemanan Tidak Publik \33[m(\x1b[1;91mX\33[m)')
 		time.sleep(3)
 		back()
 
