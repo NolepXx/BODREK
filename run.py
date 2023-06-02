@@ -93,8 +93,8 @@ cokbrut=[]
 pwpluss,pwnya=[],[]
 ###----------[ GET PROXY ]----------###
 try:
-	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('socksku.txt','w').write(proxylist)
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+	open('socksku.txt','w').write(prox)
 except Exception as e:
 	baz_anim(f'gagal ster :(')
 prox=open('socksku.txt','r').read().splitlines()
