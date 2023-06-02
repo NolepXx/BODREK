@@ -1429,7 +1429,7 @@ def metod1(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]Async[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f'\r[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1486,7 +1486,7 @@ def metod2(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]REG2[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f'\r[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1545,7 +1545,7 @@ def metod3(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]REG3[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f'\r[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des) 
 	for pw in pwv:
 		try:
