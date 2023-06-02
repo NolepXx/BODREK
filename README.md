@@ -1,5 +1,3 @@
-# scbf
-Sebuah Script crackfb 
 
 # module
 ```python
@@ -11,12 +9,10 @@ pip install requests
 pip install bs4 
 pip install rich
 pip install colorama 
-git clone https://github.com/Dra-ID/scbf
-cd scbf
+git clone https://github.com/NolepXx/GULA
+cd GULA
 git pull
 python run.py
 ```
 # Thanks
 
-Basari-ID
-Vindra-ID
