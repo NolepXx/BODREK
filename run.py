@@ -1278,7 +1278,7 @@ def passwrd():
 ###----------[ REGULAR ]----------###
 def metod1(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=f'\r[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
+	prog.update(des,description=f'\r[🔥]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des)
 	ua = random.choice(uaa)
 	ses = requests.Session()
@@ -1338,7 +1338,7 @@ def metod1(idf,pwv):
 ###----------[ ASYNC ]----------###
 def metod2(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=f'\r🗿[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
+	prog.update(des,description=f'\r[🔥]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des)
 	ua = random.choice(uaa)
 	ses = requests.Session()
@@ -1400,7 +1400,7 @@ def metod2(idf,pwv):
 ###----------[ VALIDATE ]----------###
 def metod3(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=f'\r[deep_white]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
+	prog.update(des,description=f'\r[🔥]{(loop)}/{len(id)}[/] [green]OK[/]:[green]{(ok)} [/]=[yellow] CP[/]:[yellow]{(cp)}')
 	prog.advance(des)
 	ua = random.choice(uaa)
 	ua = random.choice(['Mozilla/5.0 (Linux; Android 10; moto g(8) plus Build/QPIS30.28-Q3-28-26-4-1-7; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/112.0.5615.56 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/409.0.0.27.106;'])
