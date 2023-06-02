@@ -1178,7 +1178,8 @@ def atur_dulu():
 		baz.append('metod3')
 	else:
 		baz.append('metod1')
-		cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
+	print('')
+	cetak(panel(f'[bold white]Apakah Anda Ingin Mengunakan User-Agent Manual Untuk Melakukan Crack Account ? Y/T',width=90,title=f"[bold green]Setting User-Agent",style=f"bold white"))
 	uatambah = input(f' [+] Pilih : ')
 	if uatambah in ['y','Ya','ya','Y']:
 		ualuh.append('ya')
@@ -1197,7 +1198,6 @@ def atur_dulu():
 			pwnya.append(xpw)
 	else:
 		pwpluss.append('no')
-	passwrdh()
 
 	passwrd()
 ###----------[ BAGIAN PASSWRD ]----------###
