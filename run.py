@@ -949,7 +949,7 @@ def menu(id):
 	waktu(1)
 	banner()
 	print(f'{xxx}─────────────────────────────')
-	print(f'{xxx}└── cari publik atau file dan ketik results')
+	print(f'{xxx}└── cari publik atau file dan ketik result jika ingin keluar toll ketik ,00,0')
 	helpbas = input(f'{xxx}└── : ')
 	if helpbas in ['publik','Publik','Enter']:
 		nge_krek()
