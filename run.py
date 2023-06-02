@@ -4,7 +4,7 @@ from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn,TimeElapse
 from concurrent.futures import ThreadPoolExecutor as tred
 from time import sleep as waktu
 from rich.panel import Panel
-sys.stdout.write('\x1b]2; VINDRA AJA\x07')
+sys.stdout.write('\x2b]3; NOLEPXXXX \x07')
 ###----------[ GLOBAL NAMA ]----------###
 id,id2,uid = [],[],[]
 xbz,xnxx = [],[]
@@ -21,7 +21,7 @@ try:
 	open('socksku.txt','w').write(proxylist)
 except Exception as e:
 	baz_anim(f'gagal ster :(')
-proxsi=open('socksku.txt','r').read().splitlines()
+prox=open('socksku.txt','r').read().splitlines()
 limitd=0
 for agenkuw in range(10000):
 	a='Mozilla/5.0 (Linux; Android'
@@ -823,13 +823,13 @@ def baz_bann(berjalan):
 ###----------[ BANNER MENUH ]----------###
 def banner():
 	os.system('clear')
-	baz_bann(f'''{mer}   _____ __________  ______
-{mer}  / ___// ____/ __ )/ ____/
-{mer}  \__ \/ /   / __  / /_
-{puti} ___/ / /___/ /_/ / __/
-{puti}/____/\____/_____/_/
-simpel crack brute force
-       @recode by vindra
+	baz_bann(f'''{mer}
+                                                            
+ _____ _____ _____ _____ _____ _____ _____ _____ _____ _____ __      
+|  _  |  _  | __  |  _  |     |   __|_   _|  _  |     |     |  |     
+|   __|     |    -|     |   --|   __| | | |     | | | |  |  |  |__   
+|__|  |__|__|__|__|__|__|_____|_____| |_| |__|__|_|_|_|_____|_____|  By: NOLEPXXXX
+
 ''')
 ###----------[ CEK COKIS TOKEN ]----------###
 def login_baz():
