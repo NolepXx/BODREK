@@ -1053,7 +1053,7 @@ def dump_massal():
 	try:
 		print('')
 		print(f'\x1b[1;93m[\x1b[1;92m+\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mTotal ID Yang Terkumpul = {asu}'+str(len(id)))
-		setting()
+		atur_dulu()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
 		print('\x1b[1;93m[\x1b[1;92m!\x1b[1;93m]\x1b[1;93m ╰─>\x1b[1;92mSinyal Anda Kurang Bagus Nih !')
