@@ -547,9 +547,9 @@ def nge_krek():
 def atur_dulu():
 	print(f'{asu}')
 	print(f'━─═ ◕➤ [[{asu}CRACK DARI ID{asu}]]')
-	print(f'━─═ ◕➤1. SUGIONO [{asu}TUA{asu}]')
-	print(f' ━─═ ◕➤2. EFA ELVIE [{asu}MUDA{asu}]')
-	print(f' ━─═ ◕➤3. MARIA OZAWA [{asu}ACAK{asu}]')
+	print(f'━─═ ◕➤1. KOPIKO [{asu}TUA{asu}]')
+	print(f' ━─═ ◕➤2. KOPIMIX [{asu}MUDA{asu}]')
+	print(f' ━─═ ◕➤3. KOPI GULA AREN [{asu}ACAK{asu}]')
 	aturid = input(f'{asu}━─═ ◕➤: ')
 	if aturid in ['1','01']:
 		for tua in sorted(id):
