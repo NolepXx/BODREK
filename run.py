@@ -31,6 +31,14 @@ ugen = []
 loop,baz = 0,[]
 ok,cp,oo = 0,0,[]
 usragent = []
+ses=requests.Session()
+dump = []
+ualu,ualuh = [],[]
+pretty.install()
+CON=sol() 
+console = Console()
+wa = Console()
+sys.stdout.write('\x1b]2;BBDKJINK | BODREK ESPEH \x07')
 ###----------[ GET PROXY ]----------###
 try:
 	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
@@ -357,7 +365,8 @@ def banner():
 | \__/\ | | | |\  || | | || |  | \ \_/ / |____
  \____/ \_/ \_| \_/\_| |_/\_|  |_/\___/\_____/
 
-		{m}▪︎{k}▪︎{h}▪︎{sir} PARACETAMOL BODREK {x}{m}▪︎{k}▪︎{h}▪︎{x}'''))
+		{m}▪︎{k}▪︎{h}▪︎{sir} PARACETAMOL BODREK {x}{m}▪︎{k}▪︎{h}▪︎{x}
+		'''))
 ###----------[ NGECEK COOKIES ]----------###
 def login_baz():
 	try:
