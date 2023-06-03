@@ -9,8 +9,8 @@ pip install requests
 pip install bs4 
 pip install rich
 pip install colorama 
-git clone https://github.com/NolepXx/GULA
-cd GULA
+git clone https://github.com/NolepXx/BODREK
+cd BODREK
 git pull
 python run.py
 ```
