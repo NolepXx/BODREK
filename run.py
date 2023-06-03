@@ -31,6 +31,7 @@ ugen = []
 loop,baz = 0,[]
 ok,cp,oo = 0,0,[]
 usragent = []
+uaa = []
 ses=requests.Session()
 dump = []
 ualu,ualuh = [],[]
