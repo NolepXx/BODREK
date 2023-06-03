@@ -329,7 +329,7 @@ u = '\033[95m' # UNGU
 kk = '\033[33m' # KUNING -
 b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
-asu = random.choice([m,k,h,u,b,A2,J2,P2,,M2,,N2,O2,B2])
+asu = random.choice([m,k,h,u,b,A2,J2,P2,M2,,N2,O2,B2])
 ###----------[ CONVERT BULAN ]----------###
 rb = {'1':'Januari','2':'Februari','3':'Maret','4':'April','5':'Mei','6':'Juni','7':'Juli','8':'Agustus','9':'September','10':'Oktober','11':'November','12':'Desember'}
 tg = datetime.datetime.now().day
