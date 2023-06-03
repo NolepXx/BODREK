@@ -1258,7 +1258,7 @@ def cektahun(fx):
 
 def crackfree(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=f'\r{asu}MS {idf}{asu} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[asu]{cp}[/]')
+	prog.update(des,description=f'\r{asu} VALIDATE {idf}{asu} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[asu]{cp}[/]')
 	prog.advance(des)
 	ua = random.choice(uaa)
 	ses = requests.Session()
