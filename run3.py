@@ -1,9 +1,28 @@
 #ASTAGFIRULLAH JEBOL
-import requests,json,os,sys,random,datetime,time,re,platform
-from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn,TimeElapsedColumn
+import requests,bs4,json,os,sys,random,datetime,time,re,urllib3,rich,base64
+from time import sleep
+from rich import pretty
+from rich.tree import Tree
+from rich.panel import Panel
+from rich import print as cetak
+from rich import print as rprint
+from rich import print as prints
+from rich.progress import track
+from rich.text import Text as tekz
+from rich.console import Console
+from rich.columns import Columns
+from rich.panel import Panel as nel
+from rich.panel import Panel as panel
+from bs4 import BeautifulSoup as sop
+from bs4 import BeautifulSoup as par
+from rich.console import Group as gp
+from bs4 import BeautifulSoup as parser
+from rich.columns import Columns as col
+from rich.console import Console as sol
+from rich.markdown import Markdown as mark
 from concurrent.futures import ThreadPoolExecutor as tred
-from time import sleep as waktu
-
+from concurrent.futures import ThreadPoolExecutor as BrayennnXD 
+from rich.progress import Progress,SpinnerColumn,BarColumn,TextColumn
 ###----------[ GLOBAL NAMA ]----------###
 id,id2,uid = [],[],[]
 tokenefb = []
@@ -249,7 +268,60 @@ ung = '\033[1;35m'
 puti = '\033[1;37m'
 bira = '\033[1;36m'
 xxx = '\33[m'
+###----------[ ANSII COLOR STYLE ]---------- ###
+Z = "\x1b[0;90m"     # Hitam
+M = "\x1b[38;5;196m" # Merah
+H = "\x1b[38;5;46m"  # Hijau
+K = "\x1b[38;5;226m" # Kuning
+B = "\x1b[38;5;44m"  # Biru
+U = "\x1b[0;95m"     # Ungu
+O = "\x1b[0;96m"     # Biru Muda
+P = "\x1b[38;5;231m" # Putih
+J = "\x1b[38;5;208m" # Jingga
+A = "\x1b[38;5;248m" # Abu-Abu
+N = '\x1b[0m'	# WARNA MATI
+PT = '\x1b[1;97m' # PUTIH TEBAL
+MT = '\x1b[1;91m' # MERAH TEBAL
+HT = '\x1b[1;92m' # HIJAU TEBAL
+KT = '\x1b[1;93m' # KUNING TEBAL
+BT = '\x1b[1;94m' # BIRU TEBAL
+UT = '\x1b[1;95m' # UNGU TEBAL
+OT = '\x1b[1;96m' # BIRU MUDA TEBAL
 
+###----------[ RICH COLOR STYLE ]---------- ###
+Z2 = "[#000000]" # HITAM
+M2 = "[#FF0000]" # MERAH
+H2 = "[#00FF00]" # HIJAU
+K2 = "[#FFFF00]" # KUNING
+B2 = "[#00C8FF]" # BIRU
+U2 = "[#AF00FF]" # UNGU
+N2 = "[#FF00FF]" # PINK
+O2 = "[#00FFFF]" # BIRU MUDA
+P2 = "[#FFFFFF]" # PUTIH
+J2 = "[#FF8F00]" # JINGGA
+A2 = "[#AAAAAA]" # ABU-ABU
+
+#------------[ WARNA-COLOR ]--------------#
+P = '\x1b[1;97m'
+M = '\x1b[1;91m'
+H = '\x1b[1;92m'
+K = '\x1b[1;93m'
+B = '\x1b[1;94m'
+U = '\x1b[1;95m' 
+O = '\x1b[1;96m'
+N = '\x1b[0m'    
+Z = "\033[1;30m"
+sir = '\033[41m\x1b[1;97m'
+x = '\33[m' # DEFAULT
+m = '\x1b[1;91m' #RED +
+k = '\033[93m' # KUNING +
+h = '\x1b[1;92m' # HIJAU +
+hh = '\033[32m' # HIJAU -
+u = '\033[95m' # UNGU
+kk = '\033[33m' # KUNING -
+b = '\33[1;96m' # BIRU -
+p = '\x1b[0;34m' # BIRU +
+asu = random.choice([m,k,h,u,b])
 ###----------[ CONVERT BULAN ]----------###
 rb = {'1':'Januari','2':'Februari','3':'Maret','4':'April','5':'Mei','6':'Juni','7':'Juli','8':'Agustus','9':'September','10':'Oktober','11':'November','12':'Desember'}
 tg = datetime.datetime.now().day
@@ -263,21 +335,19 @@ def baz_anim(berjalan):
         for gas in berjalan + "\n":sys.stdout.write(gas);sys.stdout.flush();time.sleep(0.05)
 def baz_bann(berjalan):
         for gas in berjalan + "\n":sys.stdout.write(gas);sys.stdout.flush();time.sleep(0.01)
-        
-###----------[ BANNER MENUH ]----------###
+#------------------[ MACHINE-SUPPORT ]---------------#
+def alvino_xy(u):
+        for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.005)
+def clear():
+	os.system('clear')
+def back():
+	login()
+#------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	print('''\033[1;34m____  ___________   _______  ________  .___ 
-\   \/  /\_____  \  \      \ \______ \ |   |  
-   \     /   _(__  <  /   |   \ |    |  \|   |   
-  /     \  /       \/    |    \|    `   \   |  
- /___/\  \/______  /\____|__  /_______  /___|
-      \_/       \/         \/        \/                                        ''')
-                  
-def banlog():
-	print('''\x1b[1;95m__   _      ___         __    _ ___   ___ __ __ 
-\033[32m)_) /_) )_) )_  )\/)    )_)  / )  (   )_   /  / 
-\x1b[1;91m/ \ / / ( ( (__ (  (    /__) (_/ \__) (__  /_ /_ 
-\x1b[1;92m╭╦═╤━──────────━─═ ◕➤ ✩✫ xnxx.com╭⍝╮⎝◣⏝◢⎠╭⍝╮ ''')
+	clear()
+	cetak(panel(f'''\t{asu}
+	
+		{m}▪︎{k}▪︎{h}▪︎{sir} META MULTI BRUTEFORCE FACEBOOK {x}{m}▪︎{k}▪︎{h}▪︎{x}'''))
 ###----------[ NGECEK COOKIES ]----------###
 def login_baz():
 	try:
@@ -300,7 +370,7 @@ def login_baz():
 def login_men():
     try:
         os.system('clear')
-        banlog()
+        banner()
         ses = requests.Session()
         print('─────────────────────────────')
         your_cookies=input(f'cookies :{xxx}{hijo} ')
