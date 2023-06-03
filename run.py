@@ -546,7 +546,7 @@ def nge_krek():
 ###----------[  ATUR DULU STER ]----------###
 def atur_dulu():
 	print(f'{asu}')
-	print(f'━─═ ◕➤ [[{asu}CRACK DARI ID{adu}]]')
+	print(f'━─═ ◕➤ [[{asu}CRACK DARI ID{asu}]]')
 	print(f'━─═ ◕➤1. SUGIONO [{asu}TUA{asu}]')
 	print(f' ━─═ ◕➤2. EFA ELVIE [{asu}MUDA{asu}]')
 	print(f' ━─═ ◕➤3. MARIA OZAWA [{asu}ACAK{asu}]')
@@ -629,8 +629,8 @@ def passwrd():
 				else:
 					gas_krek.submit(crackfree,idf,pwv)
 		print(f'{asu}')
-		print(f'{asu}+ {asu}akun ok : {biru}%s{kun} '%(ok))
-		print(f'{asu}+ {mer}akun cp : {ung}%s{kun} '%(cp))
+		print(f'{asu}+ {asu}akun ok : {asu}%s{asu} '%(ok))
+		print(f'{asu}+ {asu}akun cp : {asu}%s{asu} '%(cp))
 		print(f'{asu}')
 		
 def cektahun(fx):
@@ -666,7 +666,7 @@ def cektahun(fx):
 
 def crackfree(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=f'\r{h}MS {idf}{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]')
+	prog.update(des,description=f'\r{asu}MS {idf}{asu} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[asu]{cp}[/]')
 	prog.advance(des)
 	ua = random.choice(ugen)
 	ua2 = random.choice(usragent)
@@ -703,7 +703,7 @@ def crackfree(idf,pwv):
 def crackmobile(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	global loop,ok,cp
-	prog.update(des,description=f'\r{h}REG{idf}{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]')
+	prog.update(des,description=f'\r{asu}REG{idf}{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]')
 	prog.advance(des)
 	ua = random.choice(ugen)
 	ua2 = random.choice(usragent)
