@@ -352,7 +352,6 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	clear()
 	cetak(panel(f'''\t{asu}
    ___  ____  ___  ___  ______ __
   / _ )/ __ \/ _ \/ _ \/ __/ //_/
