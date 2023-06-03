@@ -352,7 +352,8 @@ def back():
 	login()
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
-	cetak(panel(f'''\t{asu}
+	os.system('clear')
+	baz_bann(f'''\t{asu}
    ___  ____  ___  ___  ______ __
   / _ )/ __ \/ _ \/ _ \/ __/ //_/
  / _  / /_/ / // / , _/ _// ,<   
@@ -365,7 +366,7 @@ def banner():
  \____/ \_/ \_| \_/\_| |_/\_|  |_/\___/\_____/
 
 		{m}▪︎{k}▪︎{h}▪︎{sir} PARACETAMOL BODREK {x}{m}▪︎{k}▪︎{h}▪︎{x}
-		'''))
+		''')
 ###----------[ NGECEK COOKIES ]----------###
 def login_baz():
 	try:
