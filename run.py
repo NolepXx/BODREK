@@ -1167,11 +1167,14 @@ def atur_dulu():
 	print(f'{asu}')
 	print('━─═ ◕➤ 1. MS')
 	print(' ━─═ ◕➤2. REG (Dijamin Gacor)')
+	print(' ━─═ ◕➤3. grap (NGALIR JAYA)')
 	metod = input(f'{asu}>> : ')
 	if metod in ['1','01']:
 		baz.append('free')
 	elif metod in ['2','02']:
 		baz.append('mobile')
+	elif metod in ['3','03']:
+		baz.append('reguler2')
 	else:
 		baz.append('free')
 	passwrd()
