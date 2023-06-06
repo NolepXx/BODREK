@@ -42,8 +42,8 @@ wa = Console()
 sys.stdout.write('\x1b]2;BBDKJINK | BODREK ESPEH \x07')
 ###----------[ GET PROXY ]----------###
 try:
-	proxy= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('.socksku.txt','w').write(proxy)
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+	open('.socksku.txt','w').write(prox)
 except Exception as e:
 	baz_anim(f'gagal ster :(')
 prox=open('.socksku.txt','r').read().splitlines()
