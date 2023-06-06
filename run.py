@@ -42,11 +42,11 @@ wa = Console()
 sys.stdout.write('\x1b]2;BBDKJINK | BODREK ESPEH \x07')
 ###----------[ GET PROXY ]----------###
 try:
-	proxylist= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
-	open('socksku.txt','w').write(proxylist)
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=100000&country=all&ssl=all&anonymity=all').text
+	open('socksku.txt','w').write(prox)
 except Exception as e:
 	baz_anim(f'gagal ster :(')
-proxsi=open('socksku.txt','r').read().splitlines()
+prox=open('socksku.txt','r').read().splitlines()
 limitd=0
 for agenkuw in range(10000):
 	a='Mozilla/5.0 (Linux; Android'
@@ -1415,8 +1415,7 @@ def reguler2(idf,pwv):
 def kontol(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Async[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
@@ -1473,8 +1472,7 @@ def kontol(idf,pwv):
 def validate1(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	ua = random.choice(ugen)
-	ua2 = random.choice(ugen2)
+	ua = random.choice(uaa)
 	ses = requests.Session()
 	prog.update(des,description=f"[bold green]Validate V1[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
