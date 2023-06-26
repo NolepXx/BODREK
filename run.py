@@ -1286,7 +1286,7 @@ def cektahun(fx):
 
 def crackfree(idf,pwv):
 	global loop,ok,cp
-	prog.update(des,description=f'\r{asu} VALIDATE {idf}{asu} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[asu]{cp}[/]')
+	prog.update(des,description=f'\r{asu} 😎😎 {idf}{asu} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[asu]{cp}[/]')
 	prog.advance(des)
 	ua = random.choice(uaa)
 	ses = requests.Session()
@@ -1325,7 +1325,7 @@ def crackfree(idf,pwv):
 def crackmobile(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	global loop,ok,cp
-	prog.update(des,description=f'\r{asu}REG{idf}{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]')
+	prog.update(des,description=f'\r{asu}😁😁{idf}{x} {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]')
 	prog.advance(des)
 	ua = random.choice(uaa)
 	ses = requests.Session()
@@ -1382,7 +1382,7 @@ def reguler2(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]B-Api[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"[bold green]🐉🐉[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1435,7 +1435,7 @@ def kontol(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]Async[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"[bold green]🤡🤡[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
@@ -1492,7 +1492,7 @@ def validate1(idf,pwv):
 	bo = random.choice([m,k,h,b,u,x])
 	ua = random.choice(uaa)
 	ses = requests.Session()
-	prog.update(des,description=f"[bold green]Validate V1[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
+	prog.update(des,description=f"[bold green]✨✨[bold white] {loop}/{len(id)} OK-:[bold green]{ok}[/] CP-:[bold yellow]{cp}[/]")
 	prog.advance(des) 
 	for pw in pwv:
 		try:
